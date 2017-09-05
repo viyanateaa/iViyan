@@ -1,0 +1,324 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>iViyan</title>
+		<link rel="stylesheet" type="text/css" href="css/cal.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="js/popup.js"></script>
+		<script src="js/time.js"></script>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=VT323');
+		</style>
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/ui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.23/themes/base/jquery-ui.css" type="text/css" media="all" />
+		<!-- Finder -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#close_file").click(function(){
+					$(" #resizediv_of_file").hide();
+					$("#close_file").hide();
+				});
+				$("#resizediv_of_file").resizable();
+				$("#resizediv_of_file").draggable();	
+			});
+		</script>
+		
+		 <script type="text/javascript">
+			 $(document).ready(
+			    function() {
+			        $("#file").click(function() {
+			            $("#resizediv_of_file").toggle();
+			            $("#close_file").show();
+			        });
+			    });
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#close_finder").click(function(){
+					$(" #div_of_finder").hide();
+					$("#close_finder").hide();
+					return false; 
+				});
+				
+				$("#div_of_finder").draggable();	
+			});
+		</script>
+		
+		 <script type="text/javascript">
+			 $(document).ready(
+			    function() {
+			        $("#finder").click(function() {
+			            $("#div_of_finder").toggle();
+			            $("#close_finder").show();
+			            return false; 
+			        });
+			    });
+		</script>
+
+		<!-- Calcuater -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#close_calculator").click(function(){
+					$(" #div_of_calculator").hide();
+					$("#close_calculator").hide();
+					return false; 
+				});
+				
+				$("#div_of_calculator").draggable();	
+			});
+		</script>
+		
+		 <script type="text/javascript">
+			 $(document).ready(
+			    function() {
+			        $("#calculator").click(function() {
+			            $("#div_of_calculator").toggle();
+			            $("#close_calculator").show();
+			            return false; 
+			        });
+			    });
+		</script>
+
+
+		<!-- Clock -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#close_clock").click(function(){
+					$(" #resizediv_of_clock").hide();
+					$("#close_clock").hide();
+				});
+				$("#resizediv_of_file").resizable();
+				$("#resizediv_of_file").draggable();	
+			});
+		</script>
+		
+		 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#close_clock").click(function(){
+					$(" #div_of_clock").hide();
+					$("#close_clock").hide();
+					return false; 
+				});
+				
+				$("#div_of_clock").draggable();	
+			});
+		</script>
+		
+		 <script type="text/javascript">
+			 $(document).ready(
+			    function() {
+			        $("#clock").click(function() {
+			            $("#div_of_clock").toggle();
+			            $("#close_clock").show();
+			            return false; 
+			        });
+			    });
+		</script>
+
+		<!-- Dialogbox -->
+		<script>
+				function hideAfterSomeTime(hideTime)
+				{
+					// 10000 = 10 seconds. Change it
+					 window.setTimeout("document.getElementById('short-time-msg').style.display='none'", (hideTime)?hideTime:10000);
+				}
+		</script>
+	</head>
+	<body background= "img/MAC_BACKGROUND.jpg" >
+		<div id="everything">
+
+			<div id="short-time-msg">
+				<img src="gif/apple3d.gif" width="100"><br><br> 
+				Welcome to Viyans Macintosh! <br><br> 
+				<a id ="msg" href="#" onclick="hideAfterSomeTime(-1)">Hide this!</a>
+				<script>hideAfterSomeTime()</script>
+			</div>
+
+			<div id="div_of_finder">
+				<div id="header_finder">
+				 	<span id='close_finder'>&#10006;</span>
+				 	<div id="title_finder">Viyan's Macintosh  </div>
+				</div>
+				<div><img id= "apple" src="gif/applerainbow.gif"></div>
+				<div id="info"> This Macintosh was made by Viyan Ateaa</div>
+			   <div id= "bottom_finder">Version 0.1 © 2017 Viyan Ateaa computer.</div>
+			</div>
+
+			<div id="div_of_calculator">
+				<div id="header_calculator">
+				 	<span id='close_calculator'>&#10006;</span>
+				 	<div id="title_calculator">Calculator</div>
+				</div>
+				 <div id="clac-contain">
+				<form name="calculator">
+					<input type= "text" class= "view" name ="answer"/>
+					<br />
+
+					<input type="button" value="c" onclick="calculator.answer.value = ''"/>
+					<input type="button" value="E" onclick="calculator.answer.value += 'E'"/>
+					<input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)"/>
+					<input type="button" value=" * " onclick="calculator.answer.value += '*'"/>
+					<br />
+					
+					<input type="button" value="7" onclick="calculator.answer.value += '7'"/>
+					<input type="button" value="8" onclick="calculator.answer.value += '8'"/>
+					<input type="button" value="9" onclick="calculator.answer.value += '9'"/>
+					<input type="button" value="/ " onclick="calculator.answer.value += ' / '"/>
+					<br />
+					
+					<input type="button" value="4" onclick="calculator.answer.value += '4'"/>
+					<input type="button" value="5" onclick="calculator.answer.value += '5'"/>
+					<input type="button" value="6" onclick="calculator.answer.value += '6'"/>
+					<input type="button" value=" - " onclick="calculator.answer.value += '-'"/>
+					<br />
+					
+					<input type="button" value="1" onclick="calculator.answer.value += '1'"/>
+					<input type="button" value="2" onclick="calculator.answer.value += '2'"/>
+					<input type="button" value="3" onclick="calculator.answer.value += '3'"/>
+					<input type="button" value=" + "class= "plus" onclick="calculator.answer.value += '+'"/>
+					<br />
+
+					<input type="button" value="0"  id= "Z" class= "zero" onclick="calculator.answer.value += '0'"/>
+					<input type="button" value="." class="point"onclick="calculator.answer.value += '.'"/>
+				</form>
+			</div>
+				 
+			    
+			</div>
+
+
+			<div id="div_of_clock">
+				<div id="header_clock">
+				 	<span id='close_clock'>&#10006;</span>
+				 	<div id="title_clock">Clock </div>
+				</div>
+				<p id="Time"><script> document.write(weekday[d.getDay()] + ',' + " " + month[d.getMonth()] + " " + d.getDate() + ',' + " " + d.getFullYear() + '<br>' + d.toLocaleTimeString());</script>
+				</p>
+			</div>
+			<nav>
+				 	<ul class="clear-fix">
+						<li >
+							<a class="mac"> <span style="cursor: url("trash.jpg"), auto;"></span>
+									&#63743;
+							</a>
+								<ul>
+									<li><a id="finder">About the finder</a></li>
+									<li><a id ="calculator">Calculator</a></li>
+									<li><a id="clock"> Clock </a></li>
+									<li><a>Key caps</a></li>
+									<li><a>Puzzel</a></li>
+									<li><a>Note Pad</a></li>
+									<li><a>Scrapbook</a></li>
+									<li><a>Control panel</a></li>
+								</ul>
+						
+						<li>
+							<a class="nav-item">File</a>
+								<ul>
+									<li><a>Open</a></li>
+									<li><a>Duplicate &#x2318; D</a></li>
+									<li><a>Get Info &#x2318;I</a></li>
+									<li><a>Put Back</a></li>
+									<li><a>Close &#x2318; W</a></li>
+									<li><a>Close all</a></li>
+									<li><a>Print &#x2318; P</a></li>
+									<li><a>Eject&#x2318; E</a></li>
+								</ul>
+						</li>
+
+						<li>
+							<a class="nav-item">Edit</a>
+								<ul>
+									<li><a>Cut </a></li>
+									<li><a>Copy  &#x2318;C</a></li>
+									<li><a>Paste &#x2318;V</a></li>
+									<li><a>Clear</a></li>
+									<li><a>Select All</a></li>
+									<li><a>Show Clipborad</a></li>
+								</ul>
+						</li>
+							
+						<li>
+							<a class="nav-item">View</a>
+								<ul>
+									<li><a>by Icon </a></li>
+									<li><a>by Name </a></li>
+									<li><a>by Date </a></li>
+									<li><a>by Size </a></li>
+									<li><a>by Kind </a></li>
+								</ul>		
+						</li>
+
+						<li>
+							<a class="nav-item">Special</a>
+								<ul>
+									<li><a>Clean Up</a></li>
+									<li><a>Empty Trash</a></li>
+								</ul>
+						</li>
+						
+						</li>
+					</ul>
+			</nav> 
+
+
+
+
+			
+			<section  class="system">
+			    <div id="file">
+			      <a   id="system-disk"><img src= "img/systemdisk.svg" width="70" height="70" >
+			      <strong><mark>System Disk</mark></strong></a>
+			    </div> 
+			</section>
+
+			<div id="resizediv_of_file">
+				 <div id="header_file">
+					 <span id='close_file'>&#10006;</span>
+					 <div id="title_file">System Disk</div>
+				</div>
+				 <br>  <br> 
+				<div class="pdf">
+					<a  href="http://viyanateaa.com/work" target= "framename"><img src="img/file.png">My work</a>
+				 	<a  href="https://www.linkedin.com/in/viyan-ateaa-17323186/" target= "framename"><img src="img/file.png">CV</a>
+				 	<a  href="http://viyanateaa.com/work" target= "framename"><img src="img/file.png">School project</a>
+				 	<a  href="http://viyanateaa.com/work" target= "framename"><img src="img/file.png">Personal project</a>
+				</div>
+			</div>
+
+	 
+		
+			<section  class="Trashy">
+				<a id="trash"><img src="img/trash.svg" width="70" height="70"><strong> <mark> Trash </mark> </strong>
+				</a>
+			</section>
+	</div>
+
+
+
+	<div id="expand">
+		<img src="img/iVIYAN404.png" width=30%>
+		<p>Please, expand your window...</p>
+	</div>
+
+	</body>
+ 
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,299 @@
+h1{
+  font-family: 'VT323', monospace;
+}
+
+#top{
+  top: 10px;
+  margin: -9px;
+  padding: 20px;
+background: linear-gradient(180deg, black 50%,white 50%   );
+  background-size: 2px 2px;
+} 
+#text{
+  background-color: white;
+  color: black;
+  text-align: center;
+  background-size: 10px;
+  width: 50%;
+ 
+display: table;
+  margin: 0 auto;
+ }
+#close {
+    float:left ;
+    display:inline-block;
+    /*padding:0px;*/
+    /*margin: -15px;*/
+    color:black;
+  /*background:white;*/
+  background:white;
+ /* background-size: 50px;*/
+ /* height: 10px;
+  width: 10px;*/
+  border: 1px solid black;
+}
+#resizediv { 
+  width: 350px; 
+  height: 350px; 
+  padding: 0.5em;
+  background:gray;
+  color:#fff; 
+  border: 1px solid black;
+  /*overflow:scroll;*/
+ display: none;
+  position: absolute;
+
+    z-index:1;
+  /*border-top: 30px solid white;*/
+
+}
+
+h1{
+    width:30px;
+    margin-top:-10px;
+    margin-left:5px;
+     
+}
+ 
+ 
+
+.container {
+      width: 400px;
+      height: 300px;
+      background-color: #DCDCDC;
+      overflow: hidden; *//* showing scrollbars 
+}
+
+ 
+ ::-webkit-scrollbar-button:end{
+        display: none
+    }
+
+::-webkit-scrollbar-button:horizontal:increment {
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    /*background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon4.png);*/
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    /*background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon3.png);*/
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    /*background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon.png);*/
+}
+ 
+::-webkit-scrollbar-corner {
+      background-color: #D0D3D4  ;
+}
+
+
+nav{
+  font-family: 'VT323', monospace;
+  background-color: white;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom:  2px solid;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0px;
+  margin:0px;
+  /*border-style: double;*/
+}
+
+nav ul li{
+  padding: 15px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top:10px ;
+  margin: 0px;
+  
+
+
+}
+
+/*when you hover the black will show& still show*/
+nav ul li:hover > a{
+  background-color: black;
+  color: white;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top:10px ;
+
+}
+
+
+/*.mac:hover{
+  background-image: url("img/AppleIconWhite.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+} */
+
+nav ul li :hover {
+  
+  background-color: black;
+}
+/*.st1{
+  fill:black;
+}
+.st1:hover{
+  fill:white;
+}*/
+
+/*img:hover{
+background-image: url("White.png");
+  
+}*/
+
+nav ul li a:hover{
+  
+  width: 100%;
+}
+
+nav ul li:hover > ul{
+  background-color: white;
+  border:1px solid;
+  visibility: visible;
+}
+
+nav ul ul li{
+  position: relative;
+}
+nav > ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+nav > ul >li {
+  float: left;
+} 
+.clear-fix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.system{
+  position: absolute;
+   top: 40px;
+   right: 16px;
+}
+.Trashy{
+  position: absolute;
+   bottom: 40px;
+   right: 16px;
+}
+#system-disk {
+  display: inline-block;
+   font-family: 'VT323', monospace;
+   font-size: 25px;
+   color: black;
+   text-decoration: none;
+   position: absolute;
+   top: 8px;
+   right: 16px;
+   font-size: 18px;
+   text-align: center;
+   cursor: pointer;
+  /*cursor: url('clock.png') 1 2, auto;*/
+    /*z-index:-1;*/
+}
+
+
+#trash{
+   display: inline-block;
+   font-family: 'VT323', monospace;
+   font-size: 25px;
+   color: black;
+   text-decoration: none;
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+   font-size: 18px;
+   text-align: center;
+   /*cursor: pointer;*/
+  cursor: url('clock.png') 1 2, auto;
+  z-index:-1;
+}
+
+#trash :hover{
+}
+mark{
+  
+   background-color: white;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+#header_finder{
+  top: 10px;
+  margin: -9px;
+  padding: 20px;
+background: linear-gradient(180deg, black 50%,white 50%   );
+  background-size: 2px 2px;
+} 
+#title_finder{
+  background-color: white;
+  color: black;
+  text-align: center;
+  background-size: 10px;
+  width: 50%;
+ 
+display: table;
+  margin: 0 auto;
+ }
+#close_finder {
+    float:left ;
+    display:inline-block;
+    /*padding:0px;*/
+    /*margin: -15px;*/
+    color:black;
+  /*background:white;*/
+  background:white;
+ /* background-size: 50px;*/
+ /* height: 10px;
+  width: 10px;*/
+  border: 1px solid black;
+}
+#div_of_finder { 
+  width: 350px; 
+  height: 350px; 
+  padding: 0.5em;
+  background:gray;
+  color:#fff; 
+  border: 1px solid black;
+  overflow:scroll;
+ display: none;
+  position: absolute;
+
+    z-index:1;
+  /*border-top: 30px solid white;*/
+
+}
